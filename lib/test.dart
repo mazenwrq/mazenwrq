@@ -9,9 +9,11 @@ class Testing extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           leading: IconButton(
-            icon: const Icon(Icons.menu),
+            icon: const Icon(Icons.arrow_back),
             color: Colors.blue,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context);
+            },
           ),
           title: const Text("Mazen CV",
               style:
@@ -20,7 +22,9 @@ class Testing extends StatelessWidget {
           backgroundColor: Colors.white,
           actions: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                //
+              },
               icon: const Icon(Icons.search),
               color: Colors.blue,
             ),
@@ -33,7 +37,7 @@ class Testing extends StatelessWidget {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            ///
+            Navigator.pop(context);
           },
           backgroundColor: Colors.blue,
           child: const Icon(
